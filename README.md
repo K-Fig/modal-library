@@ -1,9 +1,9 @@
 # Modal Gallery React
 
-React implementations and Figma Code Connect templates for all 25 published
+React implementations and Figma Code Connect templates for all 37 published
 component families in the Modal Gallery library:
 
-- Actions: `Button`, `Badge`, `AccordionItem`
+- Actions: `Button`, `ButtonDramatic`, `Badge`, `AccordionItem`
 - Selection: `Checkbox`, `RadioButton`, `Switch`
 - Fields: `InputField`, `Textarea`, `Select`, `SearchField`
 - Surfaces: `Card`, `Section`
@@ -11,6 +11,10 @@ component families in the Modal Gallery library:
 - Navigation: `Tabs`, `Breadcrumb`, `Pagination`, `Tooltip`
 - Data display: `Avatar`, `Progress`, `Divider`, `ListItem`,
   `DropdownMenuItem`, `TableRow`
+- Typography: `ModalGalleryTitle`, `FeaturedProductsTitle`, `ProductTitle`,
+  `AccordionQuestion`, `BodyLead`, `Metadata`, `Price`, `ActionLabel`,
+  `BadgeLabel`
+- Composition: `IconPlaceholder`, `ProductCard`
 
 ## Usage
 

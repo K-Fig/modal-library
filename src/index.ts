@@ -14,6 +14,16 @@ export type {
   ButtonProps,
   ButtonVariant,
 } from './components/Button'
+export { ButtonDramatic } from './components/ButtonDramatic'
+export type {
+  ButtonDramaticProps,
+  ButtonDramaticVariant,
+} from './components/ButtonDramatic'
+export { IconPlaceholder } from './components/IconPlaceholder'
+export type { IconPlaceholderProps } from './components/IconPlaceholder'
+export { ProductCard } from './components/ProductCard'
+export type { ProductCardProps } from './components/ProductCard'
+export * from './components/Typography'
 export * from './components/Controls'
 export * from './components/DataDisplay'
 export * from './components/Feedback'

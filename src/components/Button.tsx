@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import { IconPlaceholder } from './IconPlaceholder'
 
 export type ButtonColor = 'blue' | 'pink' | 'orange' | 'green'
 export type ButtonVariant = 'default' | 'icon'
@@ -9,18 +10,6 @@ export interface ButtonProps
   icon?: ReactNode
   showIcon?: boolean
   variant?: ButtonVariant
-}
-
-function PlusIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="modal-gallery-button__icon"
-      viewBox="0 0 20 20"
-    >
-      <path d="M4 10h12M10 4v12" />
-    </svg>
-  )
 }
 
 export function Button({
@@ -44,7 +33,7 @@ export function Button({
 
   return (
     <button className={classes} type={type} {...props}>
-      {showIcon && (icon ?? <PlusIcon />)}
+      {showIcon && (icon ?? <IconPlaceholder className="modal-gallery-button__icon" />)}
       {variant === 'default' && (
         <span className="modal-gallery-button__label">{children}</span>
       )}

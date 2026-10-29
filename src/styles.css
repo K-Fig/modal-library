@@ -96,6 +96,168 @@
   width: 20px;
 }
 
+.modal-gallery-icon-placeholder {
+  fill: none;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  width: 20px;
+}
+
+.modal-gallery-type {
+  display: inline-block;
+}
+
+.modal-gallery-type--display,
+.modal-gallery-type--section-title,
+.modal-gallery-type--product-title,
+.modal-gallery-type--question {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.modal-gallery-type--display {
+  font-size: 72px;
+  letter-spacing: 3.6px;
+  line-height: 72px;
+}
+
+.modal-gallery-type--section-title {
+  font-size: 48px;
+  letter-spacing: 1.2px;
+  line-height: 48px;
+}
+
+.modal-gallery-type--product-title {
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  line-height: 36px;
+}
+
+.modal-gallery-type--question {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  line-height: 32px;
+}
+
+.modal-gallery-type--body-lead,
+.modal-gallery-type--metadata,
+.modal-gallery-type--price,
+.modal-gallery-type--action-label,
+.modal-gallery-type--badge-label {
+  font-family: 'Outfit', sans-serif;
+}
+
+.modal-gallery-type--body-lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.modal-gallery-type--metadata,
+.modal-gallery-type--badge-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modal-gallery-type--metadata,
+.modal-gallery-type--action-label {
+  font-weight: 500;
+}
+
+.modal-gallery-type--price {
+  color: var(--modal-gallery-brand-blue);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.modal-gallery-type--action-label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-gallery-type--badge-label {
+  font-weight: 600;
+}
+
+.modal-gallery-product-card {
+  background: var(--modal-gallery-bg-card);
+  border-radius: var(--modal-gallery-radius-lg);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  max-width: 226px;
+  overflow: hidden;
+}
+
+.modal-gallery-product-card__image {
+  height: 226px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-gallery-product-card__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.modal-gallery-product-card__image span {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.modal-gallery-product-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.modal-gallery-product-card__actions {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.modal-gallery-button-dramatic {
+  border: 0;
+  border-radius: var(--modal-gallery-radius-full);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  line-height: 24px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.modal-gallery-button-dramatic--purple {
+  background: linear-gradient(160.34deg, #0066ff 0%, #ff0080 100%);
+}
+
+.modal-gallery-button-dramatic--pink {
+  background: #ff0080;
+}
+
+.modal-gallery-button-dramatic--orange {
+  background: linear-gradient(160.34deg, #ff6b35 0%, #ff0080 100%);
+}
+
+.modal-gallery-button-dramatic--green {
+  background: linear-gradient(160.34deg, #00ff88 0%, #ff0080 100%);
+}
+
 .modal-gallery-badge {
   align-items: center;
   border-radius: var(--modal-gallery-radius-full);
