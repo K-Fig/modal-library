@@ -1,5 +1,5 @@
 {
-  "name": "@modal-gallery/react",
+  "name": "@sc-demo/modal-gallery",
   "version": "0.1.0",
   "description": "React components and Figma Code Connect templates for the Modal Gallery design system.",
   "type": "module",
