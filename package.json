@@ -22,7 +22,11 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic",
+    "chromatic:force": "chromatic --force-rebuild"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -33,12 +37,33 @@
     "@fontsource/outfit": "^5.2.8"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "latest",
     "@figma/code-connect": "^2.1.0",
+    "@storybook/addon-a11y": "^10.6.5",
+    "@storybook/addon-designs": "^12.0.0",
+    "@storybook/addon-docs": "^10.6.5",
+    "@storybook/addon-mcp": "^10.6.5",
+    "@storybook/addon-vitest": "^10.6.5",
+    "@storybook/react-vite": "^10.6.5",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "@vitest/browser-playwright": "latest",
+    "@vitest/coverage-v8": "latest",
+    "chromatic": "^18.13.6",
+    "mockdate": "^3.0.5",
+    "msw": "^3.0.3",
+    "msw-storybook-addon": "^3.0.3",
+    "playwright": "latest",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "storybook": "^10.6.5",
     "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "latest"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
